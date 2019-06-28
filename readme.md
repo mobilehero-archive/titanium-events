@@ -1,11 +1,16 @@
-[![Codeship](https://img.shields.io/codeship/3ad58940-4c7d-0131-15d5-5a8cd3f550f8.svg?maxAge=2592000)]()
-[![NPM version](https://badge.fury.io/js/eventemitter2.svg)](http://badge.fury.io/js/eventemitter2)
-[![Dependency Status](https://img.shields.io/david/asyncly/eventemitter2.svg)](https://david-dm.org/asyncly/eventemitter2)
-[![npm](https://img.shields.io/npm/dm/eventemitter2.svg?maxAge=2592000)]()
+# @titanium/events
+
+![https://www.npmjs.com/package/@titanium/events](https://img.shields.io/npm/v/@titanium/events.png)
+
+
+> Titanium native mobile event emitter implementation [eventemitter2] with namespaces, wildcards, TTL and browser support
 
 # SYNOPSIS
 
 EventEmitter2 is an implementation of the EventEmitter module found in Node.js. In addition to having a better benchmark performance than EventEmitter and being browser-compatible, it also extends the interface of EventEmitter with additional non-breaking features.
+
+> This is a repackaging is based on [eventemitter2](https://github.com/EventEmitter2/EventEmitter2) v5.0.1
+
 
 # DESCRIPTION
 
