@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Titanium native mobile event emitter implementation [eventemitter2] with namespaces, wildcards, TTL and browser support",
 	"keywords": [
 		"event",
@@ -45,9 +45,6 @@
 		"benchmark": "node test/perf/benchmark.js",
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 	},
-	"files": [
-		"index.js"
-	],
 	"typings": "./eventemitter2.d.ts",
 	"typescript": {
 		"definition": "./eventemitter2.d.ts"

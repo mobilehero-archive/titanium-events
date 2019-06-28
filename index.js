@@ -766,6 +766,12 @@
 
   };
 
+  EventEmitter.prototype.trigger = EventEmitter.prototype.emit;
+  EventEmitter.prototype.fire = EventEmitter.prototype.emit;
+  EventEmitter.prototype.fireEvent = EventEmitter.prototype.emit;
+  EventEmitter.prototype.addEventListener = EventEmitter.prototype.on;
+  EventEmitter.prototype.removeEventListener = EventEmitter.prototype.off;
+
   if (typeof define === 'function' && define.amd) {
      // AMD. Register as an anonymous module.
     define(function() {
