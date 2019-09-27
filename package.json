@@ -40,10 +40,12 @@
 	},
 	"main": "./index.js",
 	"scripts": {
-		"test": "nodeunit test/simple/ test/wildcardEvents/",
+		"test2": "nodeunit test/simple/ test/wildcardEvents/",
 		"coverage": "nyc --check-coverage npm run test",
 		"benchmark": "node test/perf/benchmark.js",
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+		"test": "npm install --ignore-scripts && npm run list-files",
+		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prepublishOnly": "git pull && bump"
 	},
 	"typings": "./eventemitter2.d.ts",
 	"typescript": {

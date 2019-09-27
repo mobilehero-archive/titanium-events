@@ -1,18 +1,51 @@
+<a href="#titaniumevents">
+	<p align="center">
+		<img src="https://cdn.secure-api.org/images/warning-sign-area51.png" width="80%" />
+		<img src="https://cdn.secure-api.org/images/border-line-3.png" width="70%" height="50" />
+	</p>
+</a>
+
+
 # @titanium/events
 
-![https://www.npmjs.com/package/@titanium/events](https://img.shields.io/npm/v/@titanium/events.png)
+[![@titanium/events](https://img.shields.io/npm/v/@titanium/events.png)](https://www.npmjs.com/package/@titanium/events)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-events)](https://dependabot.com)
+
+* [SYNOPSIS](#synopsis)
+* [DESCRIPTION](#description)
+	* [FEATURES](#features)
+	* [Differences (Non-breaking, compatible with existing EventEmitter)](#differences-non-breaking-compatible-with-existing-eventemitter)
+	* [emitter.addListener(event, listener)](#emitteraddlistenerevent-listener)
+	* [emitter.on(event, listener)](#emitteronevent-listener)
+	* [emitter.prependListener(event, listener)](#emitterprependlistenerevent-listener)
+	* [emitter.onAny(listener)](#emitteronanylistener)
+	* [emitter.prependAny(listener)](#emitterprependanylistener)
+	* [emitter.offAny(listener)](#emitteroffanylistener)
+		* [emitter.once(event, listener)](#emitteronceevent-listener)
+		* [emitter.prependOnceListener(event, listener)](#emitterprependoncelistenerevent-listener)
+	* [emitter.many(event, timesToListen, listener)](#emittermanyevent-timestolisten-listener)
+	* [emitter.prependMany(event, timesToListen, listener)](#emitterprependmanyevent-timestolisten-listener)
+	* [emitter.removeListener(event, listener)](#emitterremovelistenerevent-listener)
+	* [emitter.off(event, listener)](#emitteroffevent-listener)
+	* [emitter.removeAllListeners([event])](#emitterremovealllistenersevent)
+	* [emitter.setMaxListeners(n)](#emittersetmaxlistenersn)
+	* [emitter.listeners(event)](#emitterlistenersevent)
+	* [emitter.listenersAny()](#emitterlistenersany)
+	* [emitter.emit(event, [arg1], [arg2], [...])](#emitteremitevent-arg1-arg2-)
+	* [emitter.emitAsync(event, [arg1], [arg2], [...])](#emitteremitasyncevent-arg1-arg2-)
+	* [emitter.eventNames()](#emittereventnames)
 
 
 > Titanium native mobile event emitter implementation [eventemitter2] with namespaces, wildcards, TTL and browser support
 
-# SYNOPSIS
+## SYNOPSIS
 
 EventEmitter2 is an implementation of the EventEmitter module found in Node.js. In addition to having a better benchmark performance than EventEmitter and being browser-compatible, it also extends the interface of EventEmitter with additional non-breaking features.
 
 > This is a repackaging is based on [eventemitter2](https://github.com/EventEmitter2/EventEmitter2) v5.0.1
 
 
-# DESCRIPTION
+## DESCRIPTION
 
 ### FEATURES
  - Namespaces/Wildcards.
