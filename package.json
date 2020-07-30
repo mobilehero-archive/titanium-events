@@ -7,7 +7,17 @@
 		"events",
 		"emitter",
 		"eventemitter",
+		"addEventListener",
+		"addListener",
+		"pub/sub",
+		"emit",
+		"emits",
+		"on",
+		"once",
+		"publish",
+		"subscribe",
 		"titanium",
+		"turbo",
 		"mobile",
 		"axway",
 		"appcelerator",
@@ -33,50 +43,12 @@
 		"type": "git",
 		"url": "github:brentonhouse/titanium-events"
 	},
-	"devDependencies": {
-		"benchmark": ">= 0.2.2",
-		"nodeunit": "^0.11.3",
-		"nyc": "^14.1.1"
-	},
+	"devDependencies": {},
 	"main": "./index.js",
 	"scripts": {
 		"test2": "nodeunit test/simple/ test/wildcardEvents/",
-		"coverage": "nyc --check-coverage npm run test",
-		"benchmark": "node test/perf/benchmark.js",
-		"test": "npm install --ignore-scripts && npm run list-files",
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"test": "npm install --ignore-scripts && npm run list",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"prepublishOnly": "git pull && bump"
-	},
-	"typings": "./eventemitter2.d.ts",
-	"typescript": {
-		"definition": "./eventemitter2.d.ts"
-	},
-	"nyc": {
-		"lines": 83,
-		"functions": 84,
-		"branches": 79,
-		"statements": 83,
-		"watermarks": {
-			"lines": [
-				80,
-				95
-			],
-			"functions": [
-				80,
-				95
-			],
-			"branches": [
-				80,
-				95
-			],
-			"statements": [
-				80,
-				95
-			]
-		},
-		"reporter": [
-			"lcov",
-			"text-summary"
-		]
 	}
 }
