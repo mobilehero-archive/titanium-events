@@ -784,6 +784,7 @@
 	}
  
 	EventEmitter.EventEmitter2 = EventEmitter; // backwards compatibility for exporting EventEmitter property
+	EventEmitter.EventEmitter = EventEmitter; // backwards compatibility for exporting EventEmitter property
  
 	EventEmitter.prototype.listenTo= function(target, events, options){
 	  if(typeof target!=='object'){
