@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "Titanium native mobile event emitter implementation [eventemitter2] with namespaces, wildcards, TTL and browser support",
 	"keywords": [
