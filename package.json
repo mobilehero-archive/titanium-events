@@ -1,6 +1,7 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.13",
+	"version": "1.0.14",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "Titanium native mobile event emitter implementation [eventemitter2] with namespaces, wildcards, TTL and browser support",
 	"keywords": [
 		"event",
@@ -22,6 +23,7 @@
 		"axway",
 		"plugin",
 		"axway-amplify",
+		"api-builder",
 		"appcelerator",
 		"brenton-house"
 	],
@@ -49,8 +51,9 @@
 	"main": "./index.js",
 	"scripts": {
 		"test2": "nodeunit test/simple/ test/wildcardEvents/",
-		"test": "npm install --ignore-scripts && npm run list",
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"prepublishOnly2": "git pull && bump"
+		"prepublishOnly": "git pull && bump insane",
+		"prep": "npm install --ignore-scripts && npm run list-files",
+		"test": "npm run prep"
 	}
 }
