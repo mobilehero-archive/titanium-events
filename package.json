@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "⭐  Axway Amplify event emitter implementation for Appcelerator Titanium SDK",
 	"keywords": [
@@ -80,7 +80,7 @@
 		"@titanium/appcelerator": "^6.0.4",
 		"@titanium/bluebird": "^3.7.9",
 		"@titanium/errors": "^1.0.7",
-		"@titanium/essentials": "^1.0.36",
+		"@titanium/essentials": "^1.0.38",
 		"@titanium/eventsource": "^1.0.3",
 		"@titanium/jwt": "^1.0.8",
 		"@titanium/module-copier": "^1.0.14",
