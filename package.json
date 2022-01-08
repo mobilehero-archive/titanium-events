@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.18",
+	"version": "1.0.19",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "⭐  Axway Amplify event emitter implementation for Appcelerator Titanium SDK",
 	"keywords": [
@@ -21,10 +21,16 @@
 		"turbo",
 		"mobile",
 		"axway",
+		"sdk",
 		"plugin",
-		"axway-amplify",
+		"amplify",
 		"api-builder",
-		"appcelerator",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
 		"brenton-house"
 	],
 	"author": "hij1nx <paolo@async.ly> http://twitter.com/hij1nx",
@@ -47,15 +53,42 @@
 		"type": "git",
 		"url": "github:mobilehero-archive/titanium-events"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"@geek/eslint-config": "^1.0.3",
+		"@titanium/eslint-config": "^1.0.8"
+	},
 	"main": "./index.js",
 	"scripts": {
-		"test2": "nodeunit test/simple/ test/wildcardEvents/",
 		"lint": "eslint . --fix",
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"prep": "npm install --ignore-scripts && npm run list",
+		"prep": "npm install --ignore-scripts",
 		"test": "npm run prep",
-		"prepublishOnly2": "git pull && npm test && bump insane",
-		"prepublishOnly": "git pull && npm test && npm audit fix && bump insane"
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
+	},
+	"dependencies": {
+		"@geek/cache": "^1.0.2",
+		"@geek/config": "^0.2.4",
+		"@geek/dotenv": "^0.0.9",
+		"@geek/jsonc": "^1.0.4",
+		"@geek/jwt": "^1.0.1",
+		"@geek/logger": "^1.0.18",
+		"@geek/retry": "^1.0.0",
+		"@geek/spawn": "^0.0.3",
+		"@geek/spinner": "^1.0.0",
+		"@geek/tld": "^2.0.1-1",
+		"@titanium/appcelerator": "^6.0.4",
+		"@titanium/bluebird": "^3.7.9",
+		"@titanium/errors": "^1.0.7",
+		"@titanium/essentials": "^1.0.36",
+		"@titanium/eventsource": "^1.0.3",
+		"@titanium/jwt": "^1.0.8",
+		"@titanium/module-copier": "^1.0.14",
+		"@titanium/please": "^1.0.16",
+		"@titanium/polyfill": "^1.0.17",
+		"@titanium/querystring": "^1.0.2",
+		"@titanium/tiapp-xml": "^1.0.14",
+		"@titanium/titanium": "^5.4.8",
+		"@titanium/turbo": "^2.2.23"
 	}
 }
