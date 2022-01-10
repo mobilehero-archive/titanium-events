@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.22",
+	"version": "1.0.23",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "⭐  Axway Amplify event emitter implementation for Appcelerator Titanium SDK",
 	"keywords": [
@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@geek/eslint-config": "^1.0.3",
-		"@titanium/eslint-config": "^1.0.12"
+		"@titanium/eslint-config": "^1.0.14"
 	},
 	"main": "./index.js",
 	"scripts": {
@@ -77,18 +77,18 @@
 		"@geek/spawn": "^0.0.3",
 		"@geek/spinner": "^1.0.0",
 		"@geek/tld": "^2.0.1-1",
-		"@titanium/appcelerator": "^6.0.6",
-		"@titanium/bluebird": "^3.7.13",
+		"@titanium/appcelerator": "^6.0.8",
+		"@titanium/bluebird": "^3.7.14",
 		"@titanium/errors": "^1.0.9",
-		"@titanium/essentials": "^1.0.40",
-		"@titanium/eventsource": "^1.0.8",
-		"@titanium/jwt": "^1.0.12",
-		"@titanium/module-copier": "^1.0.15",
-		"@titanium/please": "^1.0.19",
-		"@titanium/polyfill": "^1.0.20",
-		"@titanium/querystring": "^1.0.5",
-		"@titanium/tiapp-xml": "^1.0.17",
-		"@titanium/titanium": "^5.4.13",
-		"@titanium/turbo": "^2.2.29"
+		"@titanium/essentials": "^1.0.42",
+		"@titanium/eventsource": "^1.0.9",
+		"@titanium/jwt": "^1.0.14",
+		"@titanium/module-copier": "^1.0.17",
+		"@titanium/please": "^1.0.20",
+		"@titanium/polyfill": "^1.0.21",
+		"@titanium/querystring": "^1.0.7",
+		"@titanium/tiapp-xml": "^1.0.18",
+		"@titanium/titanium": "^5.4.15",
+		"@titanium/turbo": "^2.2.32"
 	}
 }
