@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/events",
-	"version": "1.0.47",
+	"version": "1.0.48",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"description": "⭐  Axway Amplify event emitter implementation for Appcelerator Titanium SDK",
 	"keywords": [
@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@geek/eslint-config": "^1.0.3",
-		"@titanium/eslint-config": "^1.0.41"
+		"@titanium/eslint-config": "^1.0.42"
 	},
 	"main": "./index.js",
 	"scripts": {
